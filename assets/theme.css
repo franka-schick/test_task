@@ -2716,7 +2716,7 @@ hr {
 .product-single {
   overflow-anchor: none;
   }
-    @media only screen and (min-width: 990px) {
+    @media only screen and (min-width: 750px) {
       .product-single {
       display: flex;
   }
