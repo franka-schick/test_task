@@ -7028,3 +7028,8 @@ hr {
   color: #25A525;
   font-size: 1.5rem;
 }
+
+.thumbnail-gallery {
+  display: inline-block;
+  float: left;
+}
