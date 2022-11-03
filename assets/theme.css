@@ -3045,6 +3045,7 @@ hr {
 .product-single__thumbnails {
   display: flex;
   flex-wrap: wrap;
+  align-items: flex-start;
   margin-top: 15px;
   margin-left: -9px;
   margin-right: -9px; }
