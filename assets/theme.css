@@ -3073,6 +3073,7 @@ hr {
       clear: both; } }
 
 @media only screen and (min-width: 750px) {
+  background: red;
   .product-single__thumbnails-slider-track {
     display: flex;
     flex-wrap: wrap; } }
