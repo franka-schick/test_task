@@ -29,11 +29,18 @@
       {%- assign product_description_width = 'medium-up--one-third' -%}
       {%- assign height = 720 -%}
     {% when 'full' %}
-      {%- assign product_media_width = 'medium-up--one-half' -%}
-      {%- assign product_description_width = 'medium-up--one-half' -%}
-      {%- assign height = 530 -%}
+      {%- assign product_media_width = '' -%}
+      {%- assign product_description_width = '' -%}
+      {%- assign height = 1090 -%}
       {%- assign enable_image_zoom = false -%}
   {% endcase %}
+
+
+  
+    
+  <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
+
+
 
    <div data-thumbnail-slider >
           <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} slider-active{% endif %}" data-slider>
@@ -94,10 +101,6 @@
             {% endif %}
           </div>
         </div>
-
-
-    
-  <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
 
 
 
