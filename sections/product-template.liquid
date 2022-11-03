@@ -35,9 +35,6 @@
       {%- assign enable_image_zoom = false -%}
   {% endcase %}
 
-  <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
-
-
    <div data-thumbnail-slider >
           <div class="thumbnails-wrapper{% if enable_thumbnail_slides == true %} slider-active{% endif %}" data-slider>
             {% if enable_thumbnail_slides == true %}
@@ -100,6 +97,9 @@
 
 
     
+  <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
+
+
 
     
     <div class="grid__item product-single__media-group {{ product_media_width }}{% if section.settings.media_size == 'full' %} product-single__media-group--full{% endif %}" data-product-single-media-group>
