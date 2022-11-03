@@ -3043,6 +3043,8 @@ hr {
     margin: 0 auto; } }
 
 .product-single__thumbnails {
+  align-items: flex-start;
+  flex-direction: column;
   display: flex;
   flex-wrap: wrap;
   margin-top: 15px;
@@ -3072,8 +3074,6 @@ hr {
 
 @media only screen and (min-width: 750px) {
   .product-single__thumbnails-slider-track {
-      align-items: flex-start;
-  flex-direction: column;
     display: flex;
     flex-wrap: wrap; } }
 
