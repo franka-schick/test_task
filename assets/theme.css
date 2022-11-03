@@ -3046,6 +3046,7 @@ hr {
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
+  flex-direction: column;
   margin-top: 15px;
   margin-left: -9px;
   margin-right: -9px; }
