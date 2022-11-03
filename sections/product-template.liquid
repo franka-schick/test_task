@@ -25,13 +25,13 @@
       {%- assign product_description_width = 'medium-up--one-half' -%}
       {%- assign height = 530 -%}
     {% when 'large' %}
-    {%- assign product_media_width = 'medium-up--one-half' -%}
+      {%- assign product_media_width = 'medium-up--two-thirds' -%}
+      {%- assign product_description_width = 'medium-up--one-third' -%}
+      {%- assign height = 720 -%}
+    {% when 'full' %}
+      {%- assign product_media_width = 'medium-up--one-half' -%}
       {%- assign product_description_width = 'medium-up--one-half' -%}
       {%- assign height = 530 -%}
-    {% when 'full' %}
-      {%- assign product_media_width = '' -%}
-      {%- assign product_description_width = '' -%}
-      {%- assign height = 1090 -%}
       {%- assign enable_image_zoom = false -%}
   {% endcase %}
 
