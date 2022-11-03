@@ -3051,7 +3051,8 @@ hr {
   @media only screen and (max-width: 749px) {
     .product-single__thumbnails {
       margin-top: 0;
-      justify-content: center; }
+      justify-content: center;
+      display: none;}
       .slider-active .product-single__thumbnails {
         display: block;
         margin: 0 auto;
