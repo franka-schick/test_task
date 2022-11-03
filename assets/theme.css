@@ -2715,7 +2715,7 @@ hr {
 
 .product-single {
   overflow-anchor: none;
-  display: flex;}
+  }
 
 .title {
   margin-bottom: 1rem; }
