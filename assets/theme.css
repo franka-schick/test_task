@@ -7060,3 +7060,9 @@ hr {
 .product-single__meta {
   padding-right: 22px;
 }
+
+@media only screen and (min-width: 750px) {
+  .product-gallery {
+    display: none;
+  }
+}
