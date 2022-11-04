@@ -7067,9 +7067,11 @@ hr {
   }
 }
 
+@media only screen and (max-width: 749px) {
 .thumbnail-gallery {
   display:none;
 }
 .large-image {
   display:none;
+}
 }
