@@ -7050,7 +7050,7 @@ hr {
 
     @media only screen and (max-width: 749px) {
       .custom__item--temlate{
-      margin-left: -50px;
+      margin-left: -50px !important;
       }
     }
 
