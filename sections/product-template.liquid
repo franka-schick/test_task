@@ -37,10 +37,10 @@
 
 
 
-    <!-- gallery source: https://github.com/iShopifyExpert/shopify-product-image-slider-with-thumbnail/blob/master/product-slider.liquid -->
+<!-- gallery source: https://github.com/iShopifyExpert/shopify-product-image-slider-with-thumbnail/blob/master/product-slider.liquid -->
 
   
-  <div class="product-gallery grid__item">
+  <div class="product-gallery">
     <div class="slider-for">
     {% for media in product.media %}
     <div class="item-slide"><a data-fancybox="gallery" href="{{ media | img_url: 'master'}}"><img src="{{ media | img_url: '800x800'}}"  title="img" alt="img" /></a></div>

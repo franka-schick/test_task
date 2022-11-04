@@ -7056,13 +7056,3 @@ hr {
   margin: 5px;
   font-size: 1.2rem;
 }
-
-.gallery-grid {
-  max-width: 40%;
-}
-   @media only screen and (max-width: 749px) {
-     .gallery-grid {
-      max-width: 100%;
-     }
-   }
-
