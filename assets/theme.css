@@ -7049,7 +7049,7 @@ hr {
 }
 
 .custom__item-inner--image {
-  max-width: 80px;
+  max-width: 80px !important;
 }
 
 .custom__image {
