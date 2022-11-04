@@ -6362,7 +6362,7 @@ hr {
         -ms-flex: 1 0 50%;
         flex: 1 0 50%;
         max-width: 400px;
-        margin-left: auto;
+        margin-left: -40px;
         margin-right: auto; } }
   .custom__item .collection-grid-item {
     margin-bottom: 0; }
@@ -7063,9 +7063,4 @@ hr {
 .badge-title {
   margin: 5px;
   font-size: 1.2rem;
-}
-
-@media only screen and (max-width: 749px)
-.custom__item.small--one-half {
-  margin-left: -40px !important;
 }
