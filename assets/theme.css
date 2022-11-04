@@ -7042,3 +7042,7 @@ hr {
   transform: scale(0.8);
   margin-top: -45px;
 }
+
+.custom__image {
+  width: 30px;
+}
