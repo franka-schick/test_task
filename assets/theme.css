@@ -7048,6 +7048,10 @@ hr {
   padding-left: 5px;
 }
 
+.custom__image {
+  max-width: 80px;
+}
+
 .custom__item--text {
   padding: 0px;
 }
