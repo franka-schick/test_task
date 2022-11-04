@@ -40,16 +40,17 @@
   
 <div class="grid__item"
   <div class="product-gallery">
+      <div class="slider-nav">
+    {% for media in product.media %}
+    <div class="thumb-slide"><img src="{{ media | img_url: '150x150'}}" /></div>
+    {% endfor %}
+  </div>
   <div class="slider-for">
     {% for media in product.media %}
     <div class="item-slide"><a data-fancybox="gallery" href="{{ media | img_url: 'master'}}"><img src="{{ media | img_url: '800x800'}}"  title="img" alt="img" /></a></div>
     {% endfor %}
   </div>
-  <div class="slider-nav">
-    {% for media in product.media %}
-    <div class="thumb-slide"><img src="{{ media | img_url: '150x150'}}" /></div>
-    {% endfor %}
-  </div>
+
 </div>
 {{ '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css' | stylesheet_tag }}
 {{ '//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css' | stylesheet_tag }}
