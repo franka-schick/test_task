@@ -7046,3 +7046,7 @@ hr {
 .custom__item--image {
   width: 100px;
 }
+
+.product-badge-description {
+  margin: 0px;
+}
