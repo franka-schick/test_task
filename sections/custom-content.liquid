@@ -63,7 +63,7 @@
                 </div>
                 <noscript>
                   {% capture image_size %}{{ max_height }}x{% endcapture %}
-                  {{ block.settings.image | img_url: image_size, scale: 2, crop: 'top' | img_tag: block.settings.image.alt, 'custom__image' }}
+                  {{ block.settings.image | img_url: image_size, scale: 1, crop: 'top' | img_tag: block.settings.image.alt, 'custom__image' }}
                 </noscript>
               {% else %}
                 {{ 'image' | placeholder_svg_tag: 'placeholder-svg' }}
