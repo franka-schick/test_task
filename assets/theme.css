@@ -7064,3 +7064,7 @@ hr {
   margin: 5px;
   font-size: 1.2rem;
 }
+
+.custom__item.small--one-half{
+  margin-left: -40px;
+}
