@@ -37,42 +37,58 @@
 
 
 
-  <div class="galleria" style="text-align: left;">
-  <img alt="1800 Tequila" src="//cdn.shopify.com/s/files/1/1163/1482/files/1800Tequila_Picture_2048x2048.jpg?v=1490645889" />
-  <img alt="" src="//cdn.shopify.com/s/files/1/1163/1482/files/BasilHayden_2048x2048.jpg?v=1490646055" />
-  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Fireball_Bootlegger_2048x2048.jpg?v=1490646337" alt="" />
-  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Casamigas_Image_2048x2048.jpg?v=1490646279" alt="" />
-  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Bulleit_Bourbon_2048x2048.jpg?v=1490646222" alt="" />
-  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/BirthdayLiquor_2048x2048.jpg?v=1490646078" alt="Birthday Bottles" />
+    <!-- gallery source: https://github.com/iShopifyExpert/shopify-product-image-slider-with-thumbnail/blob/master/product-slider.liquid -->
+
+  
+<div class="grid__item gallery-grid"
+  <div class="product-gallery">
+      <div class="slider-nav">
+    {% for media in product.media %}
+    <div class="thumb-slide"><img src="{{ media | img_url: '150x150'}}" /></div>
+    {% endfor %}
+  </div>
+  <div class="slider-for">
+    {% for media in product.media %}
+    <div class="item-slide"><a data-fancybox="gallery" href="{{ media | img_url: 'master'}}"><img src="{{ media | img_url: '800x800'}}"  title="img" alt="img" /></a></div>
+    {% endfor %}
+  </div>
+
+</div>
+{{ '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css' | stylesheet_tag }}
+{{ '//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css' | stylesheet_tag }}
+{{ '//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js' | script_tag }}
+{{ '//cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js' | script_tag }}
+{{ '//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js' | script_tag }}
+<script type="text/javascript">
+  $('.slider-for').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    fade: true,
+    asNavFor: '.slider-nav'
+  });
+  $('.slider-nav').slick({
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    asNavFor: '.slider-for',
+    dots: true,
+    centerMode: false,
+    focusOnSelect: true
+  });
+</script>
+<style>
+.product-gallery {
+    max-width: 550px;
+    margin: 0 auto;
+}
+.thumb-slide {
+    cursor: pointer;
+}
+</style> 
 </div>
 
-<script>// <![CDATA[
-Galleria.loadTheme('https://cdn.rawgit.com/Obrary/Galleria/master/etchingx/galleria.etchingx.js');
-    Galleria.configure ({
-       autoplay: 5000, // will move forward every x milliseconds
-       carousel: true, // default is true
-       carouselSpeed: 200, // default is 200 milliseconds
-       clicknext: false, // default is false
-       debug: false, // true is default
-       fullscreenCrop: false,
-       fullscreenDoubleTap: true, // true is default
-       height:0.7,
-       imageCrop: false, // false is default
-       lightbox: true,
-       maxScaleRatio: 1,
-       responsive: true,
-       showCounter: false,
-       showImagenav: true,
-       showInfo: true,
-       theme: 'galleria.etchingx.css',
-       thumbCrop: false,
-       thumbnails: true, // true is default
-       transition: 'flash'
-       });
-    Galleria.run('.galleria');
-// ]]></script>
 
-
+<!--
     
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
 
@@ -171,7 +187,7 @@ Galleria.loadTheme('https://cdn.rawgit.com/Obrary/Galleria/master/etchingx/galle
           {%- assign enable_thumbnail_slides = true -%}
         {% endif %}
 
-       
+   -->    
       
       {% endif %}
     </div>
