@@ -7044,7 +7044,8 @@ hr {
 }
 
 .custom__item--image {
-  width: 70px;
+  width: 100px;
+  padding-left: 5px;
 }
 
 .custom__item--text {
