@@ -7059,10 +7059,10 @@ hr {
 
 .gallery-grid {
   max-width: 40%;
+}
    @media only screen and (max-width: 749px) {
      .gallery-grid {
-       color: red;
       max-width: 100%;
      }
    }
-}
+
