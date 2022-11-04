@@ -7050,3 +7050,7 @@ hr {
 .custom__item--text {
   padding: 0px;
 }
+
+.badge-title {
+  padding: 5px;
+}
