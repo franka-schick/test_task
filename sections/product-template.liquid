@@ -36,6 +36,43 @@
   {% endcase %}
 
 
+
+  <div class="galleria" style="text-align: left;">
+  <img alt="1800 Tequila" src="//cdn.shopify.com/s/files/1/1163/1482/files/1800Tequila_Picture_2048x2048.jpg?v=1490645889" />
+  <img alt="" src="//cdn.shopify.com/s/files/1/1163/1482/files/BasilHayden_2048x2048.jpg?v=1490646055" />
+  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Fireball_Bootlegger_2048x2048.jpg?v=1490646337" alt="" />
+  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Casamigas_Image_2048x2048.jpg?v=1490646279" alt="" />
+  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/Bulleit_Bourbon_2048x2048.jpg?v=1490646222" alt="" />
+  <img src="//cdn.shopify.com/s/files/1/1163/1482/files/BirthdayLiquor_2048x2048.jpg?v=1490646078" alt="Birthday Bottles" />
+</div>
+
+<script>// <![CDATA[
+Galleria.loadTheme('https://cdn.rawgit.com/Obrary/Galleria/master/etchingx/galleria.etchingx.js');
+    Galleria.configure ({
+       autoplay: 5000, // will move forward every x milliseconds
+       carousel: true, // default is true
+       carouselSpeed: 200, // default is 200 milliseconds
+       clicknext: false, // default is false
+       debug: false, // true is default
+       fullscreenCrop: false,
+       fullscreenDoubleTap: true, // true is default
+       height:0.7,
+       imageCrop: false, // false is default
+       lightbox: true,
+       maxScaleRatio: 1,
+       responsive: true,
+       showCounter: false,
+       showImagenav: true,
+       showInfo: true,
+       theme: 'galleria.etchingx.css',
+       thumbCrop: false,
+       thumbnails: true, // true is default
+       transition: 'flash'
+       });
+    Galleria.run('.galleria');
+// ]]></script>
+
+
     
   <div class="grid product-single{% if section.settings.enable_payment_button %} product-single--{{ section.settings.media_size }}-media{% endif %}">
 
