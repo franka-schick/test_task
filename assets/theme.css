@@ -7066,3 +7066,7 @@ hr {
     display: none;
   }
 }
+
+.larger-gallery {
+  display:inline-flex;
+}
