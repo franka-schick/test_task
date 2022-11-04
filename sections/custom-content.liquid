@@ -71,7 +71,7 @@
             {% when 'text' %}
               <div class="medium-up--text-{{ block.settings.align_text }}">
                 {% if block.settings.title != blank %}
-                  <h3 class="h3">{{ block.settings.title | escape }}</h3>
+                  <h5 class="h5">{{ block.settings.title | escape }}</h5>
                 {% endif %}
                 {% if block.settings.text != blank %}
                   <div class="rte-setting rte">{{ block.settings.text }}</div>
