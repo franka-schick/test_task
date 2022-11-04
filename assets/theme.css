@@ -7059,4 +7059,5 @@ hr {
 
 .gallery-grid {
   width: 40%;
+  display: inline-flex;
 }
