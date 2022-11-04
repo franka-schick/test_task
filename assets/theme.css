@@ -7044,6 +7044,7 @@ hr {
 }
 
 .custom__item--image {
+  max-width: 80px;
   padding-left: 5px;
 }
 
