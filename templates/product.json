@@ -3,10 +3,88 @@
     "main": {
       "type": "product-template",
       "settings": {
+        "show_quantity_selector": false,
+        "show_vendor": false,
+        "enable_payment_button": false,
+        "show_share_buttons": true,
+        "media_size": "medium",
+        "enable_image_zoom": true,
+        "enable_video_looping": false
+      }
+    },
+    "7185f334-0083-427e-a566-d323084fcdf6": {
+      "type": "custom-content",
+      "blocks": {
+        "template--16819849265461__7185f334-0083-427e-a566-d323084fcdf6-1667549478fcfe3461-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/quality.png",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "template--16819849265461__7185f334-0083-427e-a566-d323084fcdf6-1667549478fcfe3461-0": {
+          "type": "text",
+          "settings": {
+            "title": "100% Qualität",
+            "text": "<p>Dank weichem Silikon<\/p>",
+            "width": "25%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "afaed9ce-e115-4374-a0a8-d461d781499e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/quality.png",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "40e5063a-03a7-450c-8e45-4a5ada7ce8bb": {
+          "type": "text",
+          "settings": {
+            "title": "100% Qualität",
+            "text": "<p>Dank weichem Silikon<\/p>",
+            "width": "25%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        },
+        "866b0f24-c4c4-4329-9261-e97487e20b9e": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/quality.png",
+            "width": "25%",
+            "alignment": "center"
+          }
+        },
+        "8d85b8e0-38d1-4189-99a6-7b31a04f0cc3": {
+          "type": "text",
+          "settings": {
+            "title": "100% Qualität",
+            "text": "<p>Dank weichem Silikon<\/p>",
+            "width": "25%",
+            "alignment": "center",
+            "align_text": "left"
+          }
+        }
+      },
+      "block_order": [
+        "template--16819849265461__7185f334-0083-427e-a566-d323084fcdf6-1667549478fcfe3461-1",
+        "template--16819849265461__7185f334-0083-427e-a566-d323084fcdf6-1667549478fcfe3461-0",
+        "afaed9ce-e115-4374-a0a8-d461d781499e",
+        "40e5063a-03a7-450c-8e45-4a5ada7ce8bb",
+        "866b0f24-c4c4-4329-9261-e97487e20b9e",
+        "8d85b8e0-38d1-4189-99a6-7b31a04f0cc3"
+      ],
+      "settings": {
+        "title": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "7185f334-0083-427e-a566-d323084fcdf6"
   ]
 }
